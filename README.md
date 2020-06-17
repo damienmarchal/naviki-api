@@ -151,14 +151,17 @@ Extra parameters: offset, limit, sort
 By default this function is returning a limited amount of members. Extending the limit to a very high value does not change the returned information so in order to get the complete leaderboard it is needed to iterate over the data set. The total number of members is available in the "count" field obtained by calling this url.  
 
 Examples of use:
-`console
+```console
 https://www.naviki.org/naviki/api/v5/Contest/leaderboardOfMembers/51084?offset=0&limit=100
 https://www.naviki.org/naviki/api/v5/Contest/leaderboardOfMembers/51084?offset=100&limit=100&sort="totalKmInsideBoundary"
 ...
-`
+```
+
+
 Each call to the URL returing:
+```
 {
-    "members": [                                            /// These are the same information as the one obtained from 
+    "members": [                                            /// These are the same information as the one obtained from     
         {                                                   
             "uid": 116499,                                  /// Unique contestent ID
             "contestId": 51084,                             /// Unique contest ID
@@ -179,3 +182,4 @@ Each call to the URL returing:
     "count": 4214,             /// Total number of participants, very useful to iterate over 
     "sort": "totalKm"          /// the sorting key
 }
+```
