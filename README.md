@@ -4,7 +4,7 @@ Naviki is a cycling application used by challenges organizer to record participa
 It seems there is three differenty entry points:
 - https://www.naviki.org/naviki/api/v5 to access the challenge informations
 - https://heatmaps.naviki.org/  to access the maps and data circulation per challenge
-- https://www.naviki.org/geom/swagger/ ?
+- https://www.naviki.org/geom/swagger/ i have no idea what is this one for
 
 In the following only the first API is presented. If you have informations about the two others please make PR. 
 
