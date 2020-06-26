@@ -1,17 +1,17 @@
 # naviki-api
-Naviki is a cycling application used by challenges organizer to record participants gps traces. Despite not documented naviki seems to have an open API to access the challenges data. To help anyone to develop custom tools or widgets to animate the challenge here is a brief documentation of the API as it is in 20 June 2020. 
+Naviki is a cycling application used by challenges organizer to record participants gps traces. Despite not documented naviki seems to have an open API to access the challenges data. To help anyone to develop custom tools or widgets to animate naviki based challenges here is a brief documentation of the API as it is in 20 June 2020. 
+
 
 Contest informations
 ------------------------
 URL: https://www.naviki.org/naviki/api/v5/Contest/2/findContest/{CONTESTID}
 
-Where {CONTESTID} needs to be replaced by the unique id of the contest. To find this id you may inspect the naviki's contests dedicated pages to see which id is used in your case.
+Where {CONTESTID} needs to be replaced by the unique id of the contest. To find this id you may inspect the naviki's contests dedicated pages to see which CONTESTID is used in your case.
 
 example of use:
-
-``console
+```console
 https://www.naviki.org/naviki/api/v5/Contest/2/findContest/51084
-``
+```
 
 returns:
 ```css
@@ -58,9 +58,9 @@ Parameters: offset, limit
 
 example of use:
 
-``console
+```console
 https://www.naviki.org/naviki/api/v5/Contest/findTeams/51084?offset=10&limit=30
-``
+```
 
 
 returns:
@@ -159,7 +159,7 @@ https://www.naviki.org/naviki/api/v5/Contest/leaderboardOfMembers/51084?offset=1
 
 
 Each call to the URL returing:
-```
+```css
 {
     "members": [                                            /// These are the same information as the one obtained from     
         {                                                   
