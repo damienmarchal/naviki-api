@@ -1,6 +1,12 @@
 # naviki-api
 Naviki is a cycling application used by challenges organizer to record participants gps traces. Despite not documented naviki seems to have an open API to access the challenges data. To help anyone to develop custom tools or widgets to animate naviki based challenges here is a brief documentation of the API as it is in 20 June 2020. 
 
+It seems there is three differenty entry points:
+- https://www.naviki.org/naviki/api/v5 to access the challenge informations
+- https://heatmaps.naviki.org/  to access the maps and data circulation per challenge
+- https://www.naviki.org/geom/swagger/ ?
+
+In the following only the first API is presented. If you have informations about the two others please make PR. 
 
 Contest informations
 ------------------------
